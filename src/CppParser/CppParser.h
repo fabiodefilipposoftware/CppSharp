@@ -50,8 +50,11 @@ namespace CppSharp { namespace CppParser {
         bool skipLayoutInfo = false;
         bool skipFunctionBodies = true;
 
-    private:
+    public:
         const std::string& clangVersion const;
+
+    private:
+        std::string clangVersion;
     };
 
     struct CS_API CppLinkerOptions
