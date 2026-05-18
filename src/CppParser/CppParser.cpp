@@ -19,7 +19,7 @@ namespace CppSharp { namespace CppParser {
 
     CppParserOptions::~CppParserOptions() {}
 
-    std::string CppParserOptions::getClangVersion()
+    const std::string& CppParserOptions::getClangVersion() const
     {
         return clangVersion;
     }
