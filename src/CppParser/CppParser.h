@@ -51,7 +51,7 @@ namespace CppSharp { namespace CppParser {
         bool skipFunctionBodies = true;
 
     private:
-        std::string clangVersion;
+        const std::string& clangVersion const;
     };
 
     struct CS_API CppLinkerOptions
